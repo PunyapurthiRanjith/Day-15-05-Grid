@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent_div{
+            
+            height: 50px;
+            display: flex;
+           flex-wrap:wrap;
+           justify-content: space-between;
+           align-items: center;
+           
+           background-color: rgb(56, 179, 207);
+        }
+        @media screen and  (max-width:480px) {
+            #parent_div{
+                width: 100%;
+                height: auto;
+                background-color: rgb(95, 212, 134);
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+            }
+            
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Media Queries</h2>
+    <div id="parent_div">
+        <div id="home">HOME</div>
+        <div id="more">MORE</div>
+        <div id="about">ABOUT</div>
+        <div id="contact">CONTACT</div>
+        <div id="download">DOWNLOAD</div>
+    </div>
+</body>
+</html>
